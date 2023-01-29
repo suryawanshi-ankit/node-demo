@@ -12,6 +12,8 @@ const app = express();
 
 //this needs to enable parsing of json object in body of req.
 //by default it's not enable.
+//it is a function return a middleware function.
+//job of this middleware is to read the request and if threre is json object in body of req it will pares the body of req  into a json object.
 
 app.use(express.json());
 
