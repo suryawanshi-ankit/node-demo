@@ -17,9 +17,7 @@ async function displayCommits() {
     const commits = await getCommits(repos[0]);
     console.log(commits);
   } catch(err) {
-    console.log('error is herconst user = await getUser(1);
-    const repos = await getRepositories(user.gitHubUserName);
-    ce...', err)
+    console.log('Error', err);
   }
 }
 
